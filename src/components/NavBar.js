@@ -48,7 +48,7 @@ export const NavBar = () => {
                             <a href="https://www.facebook.com/wearetheripple/"><img src={navIcon2} alt="Facebook" /></a>
                             <a href="https://www.instagram.com/wearetheripple/?hl=en"><img src={navIcon3} alt="Instagram" /></a>
                         </div>
-                        <button className="vvd" onClick={() => console.log("connect")}>
+                        <button className="vvd" onClick={() => window.location.href = "https://wearetheripple.com"}>
                             <span>Shop</span>
                         </button>
                     </span>

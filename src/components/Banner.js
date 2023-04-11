@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/bottle.png";
 
 // background with space stuff is in the CSS somewhere, look for classname of banner or something like that
 
@@ -45,12 +45,12 @@ export const Banner = () => {
         <section className="banner" id="home">
             <Container>
                 <Row className="align-items-center">
-                    <Col xs={12} md={6} xl={7}>
+                    <Col xs={12} md={8} xl={9}>
                         <span className="tagline">Take a drink, give a drink</span>
                         <h1>{"We "}<span className="wrap">{text}</span>
                         </h1>
                         <p>By using your ripple bottle, you are reducing your own carbon footprint and the plastic burden placed on landfills, oceans, streams, and other places that impact the environment.</p>
-                        <button onClick={() => console.log("connect")}>Help make a difference <ArrowRightCircle size={25}></ArrowRightCircle></button>
+                        <button onClick={() => window.location.href = "https://wearetheripple.com"}>Help make a difference <ArrowRightCircle size={25}></ArrowRightCircle></button>
                     </Col>
                     {/* <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Image" />
