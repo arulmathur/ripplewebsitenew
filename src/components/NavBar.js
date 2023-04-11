@@ -40,7 +40,7 @@ export const NavBar = () => {
                     <Nav className="me-auto">
                         <Nav.Link href="#home" className={activeLink === "home" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("home")}>Home</Nav.Link>
                         <Nav.Link href="#skills" className={activeLink === "mission" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("mission")}>Mission</Nav.Link>
-                        <Nav.Link href="#projects" className={activeLink === "projects" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("projects")}>Projects</Nav.Link>
+                        <Nav.Link href="#project" className={activeLink === "project" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("project")}>Projects</Nav.Link>
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
@@ -49,7 +49,7 @@ export const NavBar = () => {
                             <a href="https://www.instagram.com/wearetheripple/?hl=en"><img src={navIcon3} alt="Instagram" /></a>
                         </div>
                         <button className="vvd" onClick={() => window.location.href = "https://wearetheripple.com"}>
-                            <span>Shop</span>
+                            <span>Shop Ripple</span>
                         </button>
                     </span>
                 </Navbar.Collapse>
