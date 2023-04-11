@@ -8,7 +8,7 @@ import headerImg from "../assets/img/bottle.png";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["sell bottles", "build wells", "save lives", "Are the Ripple"];
+    const toRotate = ["sell bottles", "build wells", "save lives", "Are the Ripple."];
     const [text, setText] = useState("");
     const [delta, setDelta] = useState(200 - Math.random() * 50); //how fast a letter comes after the first one is typed
     const period = 1000; //length of time between letters being typed out
