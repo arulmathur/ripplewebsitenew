@@ -6,13 +6,12 @@ import headerImg from "../assets/img/bottle.png";
 // background with space stuff is in the CSS somewhere, look for classname of banner or something like that
 
 export const Banner = () => {
-    //change these words later
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Are the Ripple", "build wells", "save lives"];
+    const toRotate = ["sell bottles", "build wells", "save lives", "Are the Ripple"];
     const [text, setText] = useState("");
-    const [delta, setDelta] = useState(300 - Math.random() * 50); //how fast a letter comes after the first one is typed
-    const period = 2000; //length of time between letters being typed out
+    const [delta, setDelta] = useState(200 - Math.random() * 50); //how fast a letter comes after the first one is typed
+    const period = 1000; //length of time between letters being typed out
 
     useEffect(() => {
         let ticker = setInterval(() => {
