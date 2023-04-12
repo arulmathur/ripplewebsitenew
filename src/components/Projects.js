@@ -60,7 +60,7 @@ export const Projects = () => {
                                     <h2 className={isVisible ? "animate__animated animate__zoomIn" : ""}>Projects</h2>
                                     <p className={isVisible ? "animate__animated animate__fadeInUp" : ""}>For every 2,000 ripple water bottles sold, a community in need receives a well that provides clean water - give the gift of life.</p>
                                     <Tab.Container id="projects-tabs" defaultActiveKey="first" >
-                                        <div className={isVisible ? "animate__animated animate__fadeInUp" : ""}>
+                                        <div>
                                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                                 <Nav.Item>
                                                     <Nav.Link eventKey="first">Uganda</Nav.Link>
@@ -75,7 +75,7 @@ export const Projects = () => {
                                                 </Nav.Item>
                                             </Nav>
                                         </div>
-                                        <Tab.Content className={isVisible ? "animate__animated animate__fadeInUp" : ""}>
+                                        <Tab.Content>
                                             <Tab.Pane eventKey="first">
                                                 <Row>
                                                     {
@@ -132,14 +132,14 @@ export const Projects = () => {
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div >
-                                    <h3 className={isVisible ? "animate__animated animate__fadeInUp" : ""}>The Ripple Effect</h3>
+                                    <h3 className={isVisible ? "animate__animated animate__fadeIn" : ""}>The Ripple Effect</h3>
                                     <div
                                         style={{
                                             display: 'flex',
                                             justifyContent: 'center',
                                             alignItems: 'center',
                                         }}
-                                        className={isVisible ? "animate__animated animate__fadeInUp" : ""}
+
                                     >
                                         <iframe width="960" height="540" src="https://www.youtube.com/embed/ZwbMQuZQ4zU" title="We Are The Ripple: Digging Deeper To Solve The Water Crisis in Uganda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </div>

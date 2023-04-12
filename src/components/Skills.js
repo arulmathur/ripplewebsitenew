@@ -46,7 +46,7 @@ export const Skills = () => {
                                     <p className={isVisible ? "animate__animated animate__fadeInUp" : ""}>
                                         People with water-borne diseases occupy more than 50% of hospital beds across the world. does the answer lie in building more hospitals? Really, what is needed is to give them clean water. - Manoj Bhargava</p>
                                     {/* replace carousel images with relavent stuff */}
-                                    <div className={isVisible ? "animate__animated animate__fadeInUp" : ""}>
+                                    <div>
                                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                             <div className="item">
                                                 <img src={meter1} alt="Image"></img>
@@ -74,10 +74,10 @@ export const Skills = () => {
                                             </div>
                                         </Carousel>
                                     </div>
-                                    <h3 className={isVisible ? "animate__animated animate__fadeInUp" : ""}>
+                                    <h3>
                                         Why It Matters
                                     </h3>
-                                    <Accordion className={isVisible ? "animate__animated animate__fadeInUp" : ""}>
+                                    <Accordion>
                                         <Accordion.Item eventKey="0">
                                             <Accordion.Header>The People</Accordion.Header>
                                             <Accordion.Body style={{ backgroundColor: '#151515' }}>
