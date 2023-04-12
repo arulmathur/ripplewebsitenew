@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/bottle.png";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 // background with space stuff is in the CSS somewhere, look for classname of banner or something like that
 
@@ -10,7 +12,7 @@ export const Banner = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const toRotate = ["build wells", "save lives", "Are the Ripple."];
     const [text, setText] = useState("");
-    const [delta, setDelta] = useState(200 - Math.random() * 50); //how fast a letter comes after the first one is typed
+    const [delta, setDelta] = useState(300 - Math.random() * 50); //how fast a letter comes after the first one is typed
     const period = 1000; //length of time between letters being typed out
 
     useEffect(() => {
@@ -45,11 +47,24 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={8} xl={9}>
-                        <span className="tagline">Take a drink, give a drink</span>
-                        <h1>{"We "}<span className="wrap">{text}</span>
-                        </h1>
-                        <p>By using your ripple bottle, you are reducing your own carbon footprint and the plastic burden placed on landfills, oceans, streams, and other places that impact the environment.</p>
-                        <button onClick={() => window.location.href = "https://wearetheripple.com"}>Help make a difference <ArrowRightCircle size={25}></ArrowRightCircle></button>
+                        <TrackVisibility>
+                            {({ isVisible }) =>
+                                <div>
+                                    <div className={isVisible ? "animate__animated animate__fadeInDown" : ""}>
+                                        <span className="tagline">Take a drink, give a drink</span>
+                                    </div>
+                                    <h1>{"We "}<span className="wrap">{text}</span>
+                                    </h1>
+                                    <div className={isVisible ? "animate__animated animate__fadeInLeft" : ""}>
+                                        <p>By using your ripple bottle, you are reducing your own carbon footprint and the plastic burden placed on landfills, oceans, streams, and other places that impact the environment.</p>
+                                    </div>
+                                    <div className={isVisible ? "animate__animated animate__fadeInRight" : ""}>
+                                        <button onClick={() => window.location.href = "https://wearetheripple.com"}>Help make a difference <ArrowRightCircle size={25}></ArrowRightCircle></button>
+                                    </div>
+
+                                </div>
+                            }
+                        </TrackVisibility>
                     </Col>
                     {/* <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Image" />

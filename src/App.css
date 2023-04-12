@@ -17,6 +17,20 @@
   font-weight: 400;
 }
 
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 1.5s;
+}
+
+.animate__animated.animate__fadeInLeft {
+  --animate-duration: 1.5s;
+}
+
+.animate__animated.animate__fadeInRight {
+  --animate-duration: 1.5s;
+}
+
+
+
 /************ Default Css ************/
 * {
   margin: 0;
@@ -359,15 +373,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  background: linear-gradient(#000, #5CB0F0 150%) !important;
+  text-align: center;
+  padding: 80px 50px;
 }
+
 
 .skill-bx {
   background: #151515;
-  border-radius: 64px;
+  /* border-radius: 64px; */
   text-align: center;
   padding: 80px 50px;
-  margin: 0px -100px;
-  margin-top: -20px;
+  /* margin: 0px -100px; */
+  /* margin-top: -20px; */
 }
 
 .skill h2 {

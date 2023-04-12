@@ -35,7 +35,7 @@ export const Skills = () => {
             <Container>
                 <Row>
                     <Col>
-                        <div className="skill-bx">
+                        <div>
                             <h2>
                                 Our Mission
                             </h2>
