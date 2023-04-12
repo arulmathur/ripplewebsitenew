@@ -29,6 +29,10 @@
   --animate-duration: 1.5s;
 }
 
+.animate__animated.animate__bounceInDown {
+  --animate-duration: 1.5s;
+}
+
 
 
 /************ Default Css ************/
