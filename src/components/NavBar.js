@@ -32,7 +32,7 @@ export const NavBar = () => {
     return (
         <TrackVisibility>
             {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__bounceInDown" : ""}>
+                <div className={isVisible ? "" : ""}>
                     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
                         <Container>
                             <Navbar.Brand href="#home">

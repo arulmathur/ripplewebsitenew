@@ -65,7 +65,6 @@ export const Banner = () => {
                                     <div className={isVisible ? "animate__animated animate__fadeInRight" : ""}>
                                         <button onClick={() => window.location.href = "https://wearetheripple.com"}>Help make a difference <ArrowRightCircle size={25}></ArrowRightCircle></button>
                                     </div>
-
                                 </div>
                             }
                         </TrackVisibility>

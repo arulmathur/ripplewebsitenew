@@ -1,9 +1,10 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Container, Col, Row } from "react-bootstrap";
-import meter1 from "../assets/img/mission1.png";
-import meter2 from "../assets/img/mission2.png";
-import meter3 from "../assets/img/mission3.png";
+import springtitle from "../assets/img/springtext.png";
+import meter1 from "../assets/img/spring1.jpg";
+import meter3 from "../assets/img/spring2.jpg";
+import meter2 from "../assets/img/spring3.jpg";
 import meter4 from "../assets/img/mission4.png";
 import meter5 from "../assets/img/mission5.png";
 import meter6 from "../assets/img/mission6.png";
@@ -40,12 +41,14 @@ export const Skills = () => {
                         <Row>
                             <Col>
                                 <div>
-                                    <h2 className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                                        Our Mission
-                                    </h2>
-                                    <p className={isVisible ? "animate__animated animate__fadeInUp" : ""}>
+                                    {/* <h2 className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                                        Spring Collection
+                                    </h2> */}
+                                    <img src={springtitle} className="springTitle"></img>
+                                    {/* <p className={isVisible ? "animate__animated animate__fadeInUp" : ""}>
                                         People with water-borne diseases occupy more than 50% of hospital beds across the world. does the answer lie in building more hospitals? Really, what is needed is to give them clean water. - Manoj Bhargava</p>
-                                    {/* replace carousel images with relavent stuff */}
+                                    replace carousel images with relavent stuff */}
+                                    <p></p>
                                     <div>
                                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                             <div className="item">
@@ -60,21 +63,9 @@ export const Skills = () => {
                                                 <img src={meter3} alt="Image"></img>
                                                 {/* <h5>Logo Design</h5> */}
                                             </div>
-                                            <div className="item">
-                                                <img src={meter4} alt="Image"></img>
-                                                {/* <h5>Web Development</h5> */}
-                                            </div>
-                                            <div className="item">
-                                                <img src={meter5} alt="Image"></img>
-                                                {/* <h5>Web Development</h5> */}
-                                            </div>
-                                            <div className="item">
-                                                <img src={meter6} alt="Image"></img>
-                                                {/* <h5>Web Development</h5> */}
-                                            </div>
                                         </Carousel>
                                     </div>
-                                    <h3>
+                                    {/* <h3>
                                         Why It Matters
                                     </h3>
                                     <Accordion>
@@ -96,7 +87,7 @@ export const Skills = () => {
                                                 <p>60 million plastic bottles are disposed of in one day in the united states alone, and 80% of those bottles end up overflowing landfills. Each bottle can take up to 1,000 years to decompose, leaking dangerous and harmful chemicals during the process. some toxins leaked could cause cancer and reproductive disabilities. This is why it is imperative to solve the plastic waste crisis.</p>
                                             </Accordion.Body>
                                         </Accordion.Item>
-                                    </Accordion>
+                                    </Accordion> */}
                                 </div>
                             </Col>
                         </Row>

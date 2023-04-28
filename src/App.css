@@ -125,8 +125,8 @@ nav.navbar {
 }
 
 nav.navbar.scrolled {
-  padding: 0px 0;
-  background-color: #5CB0F0;
+  padding: 1px 0;
+  /* background-color: #5CB0F0; */
 }
 
 nav.navbar a.navbar-brand {
@@ -139,7 +139,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
-  opacity: 0.75;
+  opacity: 1;
 }
 
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
@@ -295,7 +295,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 350px 0 100px 0;
+  padding: 350px 0 200px 0;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -306,7 +306,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 50%;
   object-fit: cover;
   z-index: -1;
 }
@@ -365,51 +365,33 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
-.banner img {
-  animation: updown 10s linear infinite;
-  width: 150%;
-}
-
-@keyframes updown {
-  0% {
-    transform: translateY(-20px);
-  }
-
-  50% {
-    transform: translateY(20px);
-  }
-
-  100% {
-    transform: translateY(-20px);
-  }
-}
-
-.txt-rotate>.wrap {
-  border-right: 0.08em solid #666;
-}
-
 /************ Skills Css ************/
 .skill {
   padding: 0 0 50px 0;
   position: relative;
-  background: linear-gradient(#000, #5CB0F0 150%) !important;
+  background: linear-gradient(#5CB0F0, #5CB0F0 150%) !important;
   text-align: center;
   padding: 80px 50px;
+}
+
+.skill .springTitle {
+  width: 70%;
+  height: 70%;
 }
 
 
 .skill-bx {
   background: #151515;
-  /* border-radius: 64px; */
   text-align: center;
   padding: 80px 50px;
-  /* margin: 0px -100px; */
-  /* margin-top: -20px; */
 }
 
 .skill h2 {
-  font-size: 45px;
+  font-size: 60px;
   font-weight: 700;
+  background: linear-gradient(90.21deg, pink -5.91%, lightgreen 111.58%);
+  border-radius: 1em;
+  padding: .5em;
 }
 
 .skill h3 {
