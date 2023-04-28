@@ -145,6 +145,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
+  color: #5CB0F0 !important;
 }
 
 span.navbar-text {
@@ -230,6 +231,7 @@ span.navbar-text {
 
 .vvd:hover {
   background-color: #5CB0F0;
+  color: white !important;
 }
 
 .vvd:hover::before {
