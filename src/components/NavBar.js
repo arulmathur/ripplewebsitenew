@@ -1,6 +1,6 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { useState, useEffect } from "react";
-import logo from "../assets/img/logo-white.png";
+import logo from "../assets/img/logo-blue.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
@@ -38,6 +38,11 @@ export const NavBar = () => {
                             <Navbar.Brand href="#home">
                                 <img src={logo} alt="Logo"></img>
                             </Navbar.Brand>
+                            <span className="navbar-text">
+                                <button className="vvd" onClick={() => window.location.href = "https://wearetheripple.com"}>
+                                    <span>Shop Ripple</span>
+                                </button>
+                            </span>
                             <Navbar.Toggle aria-controls="basic-navbar-nav">
                                 <span className="navbar-toggler-icon"></span>
                             </Navbar.Toggle>
@@ -53,9 +58,6 @@ export const NavBar = () => {
                                         <a href="https://www.facebook.com/wearetheripple/"><img src={navIcon2} alt="Facebook" /></a>
                                         <a href="https://www.instagram.com/wearetheripple/?hl=en"><img src={navIcon3} alt="Instagram" /></a>
                                     </div>
-                                    <button className="vvd" onClick={() => window.location.href = "https://wearetheripple.com"}>
-                                        <span>Shop Ripple</span>
-                                    </button>
                                 </span>
                             </Navbar.Collapse>
                         </Container>

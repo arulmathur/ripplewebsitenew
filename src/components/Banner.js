@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/bottle.png";
+import backgroundLoop from "../assets/img/bgvid.mp4";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -10,7 +11,7 @@ import TrackVisibility from "react-on-screen";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["build wells", "save lives", "Are the Ripple."];
+    const toRotate = ["Buy a bottle.", "Build a well.", "Save a life.", "We Are The Ripple."];
     const [text, setText] = useState("");
     const [delta, setDelta] = useState(300 - Math.random() * 50); //how fast a letter comes after the first one is typed
     const period = 1000; //length of time between letters being typed out
@@ -44,17 +45,20 @@ export const Banner = () => {
 
     return (
         <section className="banner" id="home">
+            <video className='video' autoPlay loop muted>
+                <source src={backgroundLoop} type="video/mp4" />
+            </video>
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={8} xl={9}>
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div>
+                                    <h1><span className="wrap">{text}&nbsp;</span>
+                                    </h1>
                                     <div className={isVisible ? "animate__animated animate__fadeInDown" : ""}>
                                         <span className="tagline">Take a drink, give a drink</span>
                                     </div>
-                                    <h1>{"We "}<span className="wrap">{text}</span>
-                                    </h1>
                                     <div className={isVisible ? "animate__animated animate__fadeInLeft" : ""}>
                                         <p>By using your ripple bottle, you are reducing your own carbon footprint and the plastic burden placed on landfills, oceans, streams, and other places that impact the environment.</p>
                                     </div>
