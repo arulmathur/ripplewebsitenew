@@ -36,15 +36,15 @@ function PopupContent2() {
 function Map() {
     const mapContainer = useRef(null);
     const [map, setMap] = useState(null);
-    const [lng, setLng] = useState(32.2903);
-    const [lat, setLat] = useState(1.3733);
+    const [lng, setLng] = useState(32.29);
+    const [lat, setLat] = useState(1.37);
     const [zoom, setZoom] = useState(7);
 
     useEffect(() => {
         if (!map) return; // wait for map to initialize
         map.on('move', () => {
-            setLng(map.getCenter().lng.toFixed(4));
-            setLat(map.getCenter().lat.toFixed(4));
+            setLng(map.getCenter().lng.toFixed(2));
+            setLat(map.getCenter().lat.toFixed(2));
             setZoom(map.getZoom().toFixed(2));
         });
     });
@@ -93,7 +93,7 @@ function Map() {
             <h2>Our Wells</h2>
             <p>Click on icons to see more details about the wells we've built throughout Uganda on this interactive map!</p>
             <div className="sidebar">
-                Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
+                Longitude: {lng} | Latitude: {lat}
             </div>
             <div ref={mapContainer} className="map-container" />
         </div>
