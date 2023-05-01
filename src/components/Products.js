@@ -5,15 +5,12 @@ import springtitle from "../assets/img/springtext.png";
 import meter1 from "../assets/img/spring1.jpg";
 import meter3 from "../assets/img/spring2.jpg";
 import meter2 from "../assets/img/spring3.jpg";
-import meter4 from "../assets/img/mission4.png";
-import meter5 from "../assets/img/mission5.png";
-import meter6 from "../assets/img/mission6.png";
 import Accordion from 'react-bootstrap/Accordion';
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 
-export const Skills = () => {
+export const Products = () => {
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
@@ -34,7 +31,7 @@ export const Skills = () => {
         }
     };
     return (
-        <section className="skill" id="skills">
+        <section className="products" id="skills">
             <TrackVisibility>
                 {({ isVisible }) =>
                     <Container>
@@ -50,7 +47,7 @@ export const Skills = () => {
                                     replace carousel images with relavent stuff */}
                                     <p></p>
                                     <div>
-                                        <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                                        <Carousel responsive={responsive} infinite={true} className="product-slider">
                                             <div className="item">
                                                 <img src={meter1} alt="Image"></img>
                                                 {/* <h5>Web Development</h5> */}
@@ -64,6 +61,17 @@ export const Skills = () => {
                                                 {/* <h5>Logo Design</h5> */}
                                             </div>
                                         </Carousel>
+                                    </div>
+                                    <div>
+                                        <TrackVisibility>
+                                            {({ isVisible }) =>
+                                                <Col>
+                                                    <h1 className={isVisible ? "animate__animated animate__bounceInUp" : ""}>X,XXX</h1>
+                                                    <p className={isVisible ? "animate__animated animate__fadeInUp" : ""}>bottles till our next well</p>
+                                                    <p style={{ fontSize: "30px" }}>For every 2,000 Ripple water bottles sold, a community in need recieves a well that provides clean water - give the gift of life.</p>
+                                                </Col>
+                                            }
+                                        </TrackVisibility>
                                     </div>
                                     {/* <h3>
                                         Why It Matters

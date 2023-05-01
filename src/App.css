@@ -126,7 +126,7 @@ nav.navbar {
 
 nav.navbar.scrolled {
   padding: 1px 0;
-  /* background-color: #5CB0F0; */
+  background-color: #fff;
 }
 
 nav.navbar a.navbar-brand {
@@ -161,14 +161,14 @@ span.navbar-text {
 .social-icon a {
   width: 42px;
   height: 42px;
-  background: #5CB0F0;
+  background: #000;
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
   align-items: center;
   justify-content: center;
   line-height: 1;
-  border: 1px solid #5CB0F0;
+  border: 3px solid #5CB0F0;
 }
 
 .social-icon a::before {
@@ -209,7 +209,7 @@ span.navbar-text {
 }
 
 .vvd {
-  margin-right: 10em;
+  margin-right: 6em;
   margin-left: 3em;
 }
 
@@ -308,7 +308,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 40%;
   object-fit: cover;
   z-index: -1;
 }
@@ -317,7 +317,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  /* background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%); */
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -367,8 +366,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
-/************ Skills Css ************/
-.skill {
+/************ Products Css ************/
+.products {
   padding: 0 0 50px 0;
   position: relative;
   background: linear-gradient(#5CB0F0, #5CB0F0 150%) !important;
@@ -376,19 +375,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 80px 50px;
 }
 
-.skill .springTitle {
+.products .springTitle {
   width: 70%;
   height: 70%;
 }
 
 
-.skill-bx {
+.products-bx {
   background: #151515;
   text-align: center;
   padding: 80px 50px;
 }
 
-.skill h2 {
+.products h1 {
+  font-size: 150px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.products h2 {
   font-size: 60px;
   font-weight: 700;
   background: linear-gradient(90.21deg, pink -5.91%, lightgreen 111.58%);
@@ -396,45 +401,46 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: .5em;
 }
 
-.skill h3 {
+.products h3 {
   font-size: 35px;
   font-weight: 700;
   padding-top: 50px;
   padding-bottom: 40px;
 }
 
-.skill p {
-  color: #B8B8B8;
+.products p {
+  color: white;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px 0 75px 0;
 }
 
-.skill-slider {
+.product-slider {
   width: 75%;
   margin: 0 auto;
   position: relative;
 }
 
-.skill-slider .item img {
+.product-slider .item img {
   width: 90%;
   margin: 0 auto 15px auto;
-}
-
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
 }
 
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background-color: white;
+}
+
+.project h1 {
+  font-size: 90px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: #5CB0F0;
 }
 
 .project h2 {
@@ -449,10 +455,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 20px;
+  color: black;
 }
 
 .project p {
-  color: #B8B8B8;
+  color: black;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -461,129 +468,51 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 56%;
 }
 
-.project .nav.nav-pills {
-  width: 72%;
-  margin: 0 auto;
-  border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
-  overflow: hidden;
-}
+/************ Map Css ************/
 
-.project .nav.nav-pills .nav-item {
-  width: 33.33333%;
-}
-
-.project .nav.nav-pills .nav-link {
-  background-color: transparent;
-  border-radius: 0;
-  padding: 17px 0;
-  color: #fff;
-  width: 100%;
-  font-size: 17px;
-  letter-spacing: 0.8px;
-  font-weight: 500;
+.map {
   position: relative;
-  transition: 0.3s ease-in-out;
-  text-align: center;
-  z-index: 0;
+  background-color: white;
+  padding-bottom: 80px;
 }
 
-.project .nav.nav-pills .nav-link::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 100%;
-  background: linear-gradient(90.21deg, #5CB0F0 -5.91%, #4A2FBD 111.58%);
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: 0.3s ease-in-out;
-}
-
-.project .nav.nav-pills .nav-link.active::before {
-  width: 100% !important;
-}
-
-.project .nav.nav-pills .nav-link.active {
-  border: 1px solid rgba(255, 255, 255, 1);
-}
-
-.nav-link#projects-tabs-tab-first {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 55px 0px 0px 55px;
-}
-
-.nav-link#projects-tabs-tab-second {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.nav-link#projects-tabs-tab-third {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 0 55px 55px 0;
-}
-
-.proj-imgbx {
-  position: relative;
-  border-radius: 30px;
-  overflow: hidden;
-  margin-bottom: 24px;
-}
-
-.proj-imgbx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #5CB0F0 -5.91%, #4A2FBD 111.58%);
-  opacity: 0.85;
-  position: absolute;
-  width: 100%;
-  height: 0;
-  transition: 0.4s ease-in-out;
-}
-
-.proj-imgbx:hover::before {
-  height: 100%;
-}
-
-.proj-txtx {
-  position: absolute;
-  text-align: center;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
-  opacity: 0;
-  width: 100%;
-}
-
-.proj-imgbx:hover .proj-txtx {
-  top: 50%;
-  opacity: 1;
-}
-
-.proj-txtx h4 {
-  font-size: 30px;
+.map h1 {
+  font-size: 90px;
   font-weight: 700;
+  text-align: center;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.map h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+}
+
+.map h3 {
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.map p {
+  color: black;
+  font-size: 20px;
   letter-spacing: 0.8px;
-  line-height: 1.1em;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
 }
 
-.proj-txtx span {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.8px;
-}
 
-.background-image-right {
-  top: 20%;
-  position: absolute;
-  bottom: 0;
-  width: 35%;
-  right: 0;
-  z-index: -4;
-}
-
-/************ Projects Css ************/
+/************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;

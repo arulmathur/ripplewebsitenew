@@ -1,8 +1,9 @@
 import './App.css';
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
-import { Skills } from "./components/Skills";
+import { Products } from "./components/Products";
 import { Projects } from "./components/Projects";
+import Map from "./components/Map";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -11,8 +12,9 @@ function App() {
     <div className="App">
       <NavBar />
       <Banner />
-      <Skills />
-      {/* <Projects /> */}
+      <Products />
+      <Projects />
+      <Map />
     </div>
   );
 }
