@@ -473,7 +473,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .map {
   position: relative;
   background-color: white;
-  padding-bottom: 80px;
+  padding: 20px;
 }
 
 .map h1 {
