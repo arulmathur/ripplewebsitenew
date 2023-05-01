@@ -16,3 +16,15 @@ code {
   height: 800px;
   margin: 5em;
 }
+
+.sidebar {
+  background-color: rgba(35, 55, 75, 0.9);
+  color: #fff;
+  padding: 6px 12px;
+  font-family: monospace;
+  z-index: 1;
+  position: absolute;
+  margin: 100px;
+  margin-top: 30px;
+  border-radius: 4px;
+}
