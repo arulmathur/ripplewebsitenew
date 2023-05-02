@@ -6,6 +6,7 @@ import { Projects } from "./components/Projects";
 import Map from "./components/Map";
 import { Matters } from "./components/Matters";
 import { Team } from "./components/Team";
+import Ticker from "./components/Ticker"
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -19,6 +20,7 @@ function App() {
       <Map />
       <Matters />
       <Team />
+      <Ticker />
     </div>
   );
 }
