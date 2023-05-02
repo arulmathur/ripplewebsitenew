@@ -20,7 +20,6 @@ function App() {
       <Map />
       <Matters />
       <Team />
-      <Ticker />
     </div>
   );
 }

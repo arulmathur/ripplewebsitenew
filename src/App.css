@@ -427,6 +427,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto 15px auto;
 }
 
+.products .info {
+  font-size: 10px;
+  position: absolute;
+}
+
 /************ Projects Css ************/
 .project {
   padding: 80px 0;

@@ -63,13 +63,14 @@ export const Products = () => {
                                         <TrackVisibility>
                                             {({ isVisible }) =>
                                                 <Col>
-                                                    <h1 className={isVisible ? "animate__animated animate__bounceInUp" : ""}>X,XXX</h1>
-                                                    <p className={isVisible ? "animate__animated animate__fadeInUp" : ""}>bottles till our next well</p>
+                                                    <h1 className={isVisible ? "animate__animated animate__bounceInUp" : ""}>1,256</h1>
+                                                    <p className={isVisible ? "animate__animated animate__fadeInUp" : ""}>bottles till our next well*</p>
                                                     <p style={{ fontSize: "30px" }}>For every 2,000 Ripple water bottles sold, a community in need recieves a well that provides clean water - give the gift of life.</p>
                                                 </Col>
                                             }
                                         </TrackVisibility>
                                     </div>
+                                    <p className="info">*updated weekly</p>
                                 </div>
                             </Col>
                         </Row>
