@@ -56,6 +56,9 @@ function Map() {
             scrollZoom: false
         });
 
+
+        map.addControl(new mapboxgl.NavigationControl(), 'top-left');
+
         setMap(map);
 
         const popupContent = ReactDOMServer.renderToString(<PopupContent />); // Render the React component as HTML
@@ -91,9 +94,9 @@ function Map() {
         <div className="map" id="map">
             <h2>Our Wells</h2>
             <p>Click on icons to see more details about the wells we've built throughout Uganda on this interactive map!</p>
-            <div className="sidebar">
+            {/* <div className="sidebar">
                 Longitude: {lng} | Latitude: {lat}
-            </div>
+            </div> */}
             <div ref={mapContainer} className="map-container" />
         </div>
     );
