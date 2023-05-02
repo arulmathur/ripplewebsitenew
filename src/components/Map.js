@@ -1,8 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import ReactDOMServer from 'react-dom/server';
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
-import geoJson from "./map-data.json";
-import markerIcon from "../assets/img/wellmarker.png";
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiYXJ1bG1hdGh1cjEiLCJhIjoiY2xoMnNxcWRkMWdjYjNzcG02YTF2cGo5YSJ9.UlYoOYufeV3wrZi_nrpmZA';
 
@@ -54,7 +52,8 @@ function Map() {
             container: mapContainer.current,
             style: 'mapbox://styles/mapbox/outdoors-v12',
             center: [lng, lat],
-            zoom: zoom
+            zoom: zoom,
+            scrollZoom: false
         });
 
         setMap(map);
