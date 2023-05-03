@@ -7,7 +7,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiYXJ1bG1hdGh1cjEiLCJhIjoiY2xoMnNxcWRkMWdjYjNzc
 function PopupContent() {
     return (
         <div>
-            <h3 className="popup-title" style={{ color: "black" }}>Well #1</h3>
+            <h3 className="popup-title" style={{ color: "black" }}>Katiiti</h3>
             <p className="popup-body" style={{ color: "black" }}>This is sample text to fill up</p>
         </div>
     );
@@ -16,7 +16,7 @@ function PopupContent() {
 function PopupContent1() {
     return (
         <div>
-            <h3 className="popup-title" style={{ color: "black" }}>Well #2</h3>
+            <h3 className="popup-title" style={{ color: "black" }}>Kasoozo</h3>
             <p className="popup-body" style={{ color: "black" }}>This is sample text to fill up</p>
         </div>
     );
@@ -25,7 +25,61 @@ function PopupContent1() {
 function PopupContent2() {
     return (
         <div>
-            <h3 className="popup-title" style={{ color: "black" }}>Well #3</h3>
+            <h3 className="popup-title" style={{ color: "black" }}>Gobero</h3>
+            <p className="popup-body" style={{ color: "black" }}>This is sample text to fill up</p>
+        </div>
+    );
+}
+
+function PopupContent3() {
+    return (
+        <div>
+            <h3 className="popup-title" style={{ color: "black", fontSize: "25px" }}>St. Joseph's Aid Society of Kigando</h3>
+            <p className="popup-body" style={{ color: "black" }}>This is sample text to fill up</p>
+        </div>
+    );
+}
+
+function PopupContent4() {
+    return (
+        <div>
+            <h3 className="popup-title" style={{ color: "black", fontSize: "25px" }}>Ssunga Health Center</h3>
+            <p className="popup-body" style={{ color: "black" }}>This is sample text to fill up</p>
+        </div>
+    );
+}
+
+function PopupContent5() {
+    return (
+        <div>
+            <h3 className="popup-title" style={{ color: "black", fontSize: "25px" }}>Beautiful Feet Orphanage</h3>
+            <p className="popup-body" style={{ color: "black" }}>This is sample text to fill up</p>
+        </div>
+    );
+}
+
+function PopupContent6() {
+    return (
+        <div>
+            <h3 className="popup-title" style={{ color: "black" }}>Kyegobo</h3>
+            <p className="popup-body" style={{ color: "black" }}>This is sample text to fill up</p>
+        </div>
+    );
+}
+
+function PopupContent7() {
+    return (
+        <div>
+            <h3 className="popup-title" style={{ color: "black" }}>Mpegwe</h3>
+            <p className="popup-body" style={{ color: "black" }}>This is sample text to fill up</p>
+        </div>
+    );
+}
+
+function PopupContent8() {
+    return (
+        <div>
+            <h3 className="popup-title" style={{ color: "black" }}>Bbembe</h3>
             <p className="popup-body" style={{ color: "black" }}>This is sample text to fill up</p>
         </div>
     );
@@ -61,28 +115,61 @@ function Map() {
 
         setMap(map);
 
-        const popupContent = ReactDOMServer.renderToString(<PopupContent />); // Render the React component as HTML
-        const popupContent1 = ReactDOMServer.renderToString(<PopupContent1 />); // Render the React component as HTML
-        const popupContent2 = ReactDOMServer.renderToString(<PopupContent2 />); // Render the React component as HTML
-
-
-        // Set the size of the marker icon using CSS
+        const popupContent = ReactDOMServer.renderToString(<PopupContent />);
+        const popupContent1 = ReactDOMServer.renderToString(<PopupContent1 />);
+        const popupContent2 = ReactDOMServer.renderToString(<PopupContent2 />);
+        const popupContent3 = ReactDOMServer.renderToString(<PopupContent3 />);
+        const popupContent4 = ReactDOMServer.renderToString(<PopupContent4 />);
+        const popupContent5 = ReactDOMServer.renderToString(<PopupContent5 />);
+        const popupContent6 = ReactDOMServer.renderToString(<PopupContent6 />);
+        const popupContent7 = ReactDOMServer.renderToString(<PopupContent7 />);
+        const popupContent8 = ReactDOMServer.renderToString(<PopupContent8 />);
 
 
         const marker = new mapboxgl.Marker({ color: "Red" })
-            .setLngLat([lng, lat])
+            .setLngLat([32.42, 0.43])
             .addTo(map)
-            .setPopup(new mapboxgl.Popup().setHTML(popupContent)); // Use setHTML to set the popup content
+            .setPopup(new mapboxgl.Popup().setHTML(popupContent));
 
         const marker1 = new mapboxgl.Marker({ color: "blue" })
-            .setLngLat([lng + 1, lat + 1])
+            .setLngLat([32.31, 0.40])
             .addTo(map)
-            .setPopup(new mapboxgl.Popup().setHTML(popupContent1)); // Use setHTML to set the popup content
+            .setPopup(new mapboxgl.Popup().setHTML(popupContent1));
 
         const marker2 = new mapboxgl.Marker({ color: "orange" })
-            .setLngLat([lng, lat + 1])
+            .setLngLat([32.31, 0.48])
             .addTo(map)
-            .setPopup(new mapboxgl.Popup().setHTML(popupContent2)); // Use setHTML to set the popup content
+            .setPopup(new mapboxgl.Popup().setHTML(popupContent2));
+
+        const marker3 = new mapboxgl.Marker({ color: "yellow" })
+            .setLngLat([31.71, 0.91])
+            .addTo(map)
+            .setPopup(new mapboxgl.Popup().setHTML(popupContent3));
+
+        const marker4 = new mapboxgl.Marker({ color: "green" })
+            .setLngLat([31.86, -0.31])
+            .addTo(map)
+            .setPopup(new mapboxgl.Popup().setHTML(popupContent4));
+
+        const marker5 = new mapboxgl.Marker({ color: "violet" })
+            .setLngLat([31.92, .6])
+            .addTo(map)
+            .setPopup(new mapboxgl.Popup().setHTML(popupContent5));
+
+        const marker6 = new mapboxgl.Marker({ color: "indigo" })
+            .setLngLat([32.19, .24])
+            .addTo(map)
+            .setPopup(new mapboxgl.Popup().setHTML(popupContent6));
+
+        const marker7 = new mapboxgl.Marker({})
+            .setLngLat([32.22, .25])
+            .addTo(map)
+            .setPopup(new mapboxgl.Popup().setHTML(popupContent7));
+
+        const marker8 = new mapboxgl.Marker({ color: "teal" })
+            .setLngLat([32.16, .26])
+            .addTo(map)
+            .setPopup(new mapboxgl.Popup().setHTML(popupContent8));
 
         return () => {
             map.remove();
