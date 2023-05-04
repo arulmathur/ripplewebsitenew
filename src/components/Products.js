@@ -70,6 +70,9 @@ export const Products = () => {
                                             }
                                         </TrackVisibility>
                                     </div>
+                                    <button className="vvd" onClick={() => window.location.href = "https://wearetheripple.com"} style={{ margin: "-5px", marginTop: "-10px" }}>
+                                        <span>Shop Now!</span>
+                                    </button>
                                     <p className="info">*updated weekly</p>
                                 </div>
                             </Col>
@@ -78,6 +81,6 @@ export const Products = () => {
                     </Container>
                 }
             </TrackVisibility>
-        </section>
+        </section >
     )
 }
